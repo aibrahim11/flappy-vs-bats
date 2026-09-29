@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flappy VS Bats: Support</title>
+<meta name="description" content="Support for Flappy VS Bats for iPhone and iPad: coins, purchases, lives from the 2017 version, leaderboards and contact.">
+<style>
+  :root { color-scheme: dark; --sky-top: #021026; --sky: #004d8b; --pillar: #4d7b00; --yellow: #ffd400; --red: #e8322f; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: linear-gradient(var(--sky-top), var(--sky)); background-attachment: fixed; color: #fff; min-height: 100vh; }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 24px; }
+  h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: .5px; }
+  h1 .vs { color: var(--yellow); }
+  h2 { font-size: 22px; margin: 0 0 8px; }
+  h3 { font-size: 17px; margin: 22px 0 4px; color: var(--yellow); }
+  p { line-height: 1.55; color: rgba(255,255,255,.82); margin: 0 0 12px; }
+  a { color: var(--yellow); }
+  .sprites { display: flex; align-items: center; gap: 14px; margin: 0 0 28px; }
+  .sprites img { image-rendering: pixelated; height: 44px; width: auto; }
+  .pillar { width: 30px; height: 30px; background: var(--pillar); box-shadow: inset -4px -4px 0 rgba(0,0,0,.25); }
+  .card { background: rgba(0,0,0,.28); border: 2px solid rgba(255,255,255,.08); border-radius: 14px; padding: 20px 22px; margin-top: 28px; }
+  ul { padding-left: 20px; color: rgba(255,255,255,.82); line-height: 1.6; margin: 0; }
+  footer { margin-top: 32px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="sprites" aria-hidden="true">
+    <img src="bird.png" alt="">
+    <div class="pillar"></div>
+    <img src="bat.png" alt="">
+    <div class="pillar"></div>
+    <img src="bat.png" alt="">
+  </div>
+  <h1>Flappy <span class="vs">VS</span> Bats</h1>
+  <p>An arcade game for iPhone and iPad (iOS 17 or later). You drag a bird around an arena of pillars and drop bombs on the bats. The flames run along the corridors between the pillars. Your score is how long you survive. Coins pay for bombs (5 each), edge crossings (5 each) and new birds.</p>
+  <p>Version 2.0 rebuilds the 2017 game from scratch: bombs cost coins, the arena edges are open, there are four kinds of bat, 10 birds to unlock and new Game Center leaderboards.</p>
+
+  <div class="card">
+    <h2>Questions</h2>
+
+    <h3>How do I restore my purchases?</h3>
+    <p>Open Settings in the game and tap Restore Purchases (it is also at the bottom of the Birds shop). Use the same Apple Account you bought with. Remove Ads and the Legends Pack restore on every device, and Family Sharing members get them too. Remove Ads bought in the 2017 version restores as well.</p>
+
+    <h3>Where did my lives go?</h3>
+    <p>Version 2.0 has no lives and no continues: a run ends when the bird dies. In the 2017 version players could buy lives and post scores nobody else could reach. The first time you open 2.0, each unused life becomes 25 coins, and your coins and Remove Ads carry over. A note on the menu shows what was converted.</p>
+
+    <h3>Why did the leaderboards start fresh?</h3>
+    <p>The rules changed, so 2.0 has new Game Center leaderboards: all-time survival, this week (starts fresh every Monday) and most bats in one run. Your best time from the 2017 version is still shown in Settings.</p>
+
+    <h3>My coins did not arrive after a purchase</h3>
+    <p>Coins are added as soon as the App Store confirms the payment. If the game was closed before that, open it again: pending purchases are delivered at launch. If they still do not show up, email us with the date of the purchase.</p>
+
+    <h3>What does Remove Ads include?</h3>
+    <p>No ads after games. That is all it does, and it is a one-time purchase. The ads you choose to watch (double coins, the 75-coin daily gift, trying a Legend bird for one run) stay available.</p>
+
+    <h3>What do coins buy?</h3>
+    <p>Bombs (5 coins each), edge crossings (5 each) and birds in the Birds shop. You earn 1 coin every 2 seconds, 1 for each bat a bomb kills and 1 for each coin you pick up. Every player starts with at least 50.</p>
+
+    <h3>Why won't my bomb drop?</h3>
+    <p>A bomb costs 5 coins, at most 2 bombs can be on the arena at once, and a cell holds one bomb. The bomb button dims when you can't drop one. If you try without enough coins or with 2 bombs down, the coin counter flashes red.</p>
+
+    <h3>Why can't I fly off the edge?</h3>
+    <p>Each crossing costs 5 coins. With fewer than 5 coins the edges are walls, and the border turns red to show it. Bats always cross for free.</p>
+
+    <h3>My scores do not show on the leaderboards</h3>
+    <p>Sign in to Game Center in the iOS Settings app, then play a run. Scores are sent at the end of each run.</p>
+
+    <h3>Does it work offline?</h3>
+    <p>Yes. The game needs no account and no connection. Ads, leaderboards and purchases need the internet.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Questions, bug reports or ideas: <a href="https://github.com/aibrahim11/flappy-vs-bats/issues">open a support issue on GitHub</a>. For bugs, please include your device model and iOS version. Please do not include personal information in a public issue.</p>
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a> · <a href="att-demo.mp4">Tracking permission flow (video)</a></p>
+  </footer>
+</main>
+</body>
+</html>
